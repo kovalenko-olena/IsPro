@@ -1,0 +1,13 @@
+REPORT NAME="FR Остатки топлива по дате ПЛ с моточасами 01.2022" PAGESIZE=58
+*GROUP
+*HEAD
+FR Остатки топлива по дате ПЛ с моточасами 01.2022
+*END
+AVTOR=╩╬┬└╦┼═╩╬ ╬╦┼═└ ▀╩▓┬═└
+DATA=02/01/23
+TYPE=TABLE1462
+LANGUAGE=1
+FR=1
+[RESOURCES]
+7
+[END OF RESOURCES]

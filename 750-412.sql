@@ -59,6 +59,7 @@ inner join kpuprk1 on kpuprk1.bookmark=
 left join sprpdr1 podr on kpuprk1.KpuPrkz_PdRcd = podr.SprPdr_Rcd and '20221130' between podr.SprPdr_DatN and podr.SprPdr_DatK
 where KpuUdr_Cd=110
 and KpuUdr_DatK>='20221101'
+and KpuUdr_DatN<='20221130'
 and Kpu_Tn in 
 (select distinct r1.kpu_tn
 				from KPURLO1 r1

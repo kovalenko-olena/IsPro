@@ -1,0 +1,16 @@
+REPORT NAME="FR Звiт про здiйснення вiдрахувань та виплат (АЛIМ-ВIД.1)+вiйськовi 12.2022" PAGESIZE=58
+*GROUP
+*HEAD
+FR Звiт про здiйснення вiдрахувань та виплат (АЛIМ-ВIД.1)+вiйськовi 12.2022
+*END
+AVTOR=╩╬┬└╦┼═╩╬ ╬╦┼═└ ▀╩▓┬═└
+DATA=30/11/22
+TYPE=TABLE750
+LANGUAGE=2
+FR=1
+[RESOURCES]
+0
+2
+11
+20
+[END OF RESOURCES]

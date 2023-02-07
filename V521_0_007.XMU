@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+<query name="ЮГОК Аліменти для виплати" use-aggregation="true" fixed-cols="0" read_nolock="0" isfonbird="0" fonbird="0"><include file="V521_0_002.XML"/><result-fields><field name="Подразделение 1-го уровня(Код)" as="sKpuPdrCdLev1" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="false" source-as="sKpuPdrCdLev1"/><field name="Табельный №" as="Kpu_Tn" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="false" source-as="Kpu_Tn"/><field name="Фамилия Имя Отчество" as="Kpu_Fio" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="false" source-as="Kpu_Fio"/><field name="Учетный период" as="KpuRl_DatUp" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="false" source-as="KpuRl_DatUp"/><field name="Расчетный период" as="KpuRl_DatRp" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="false" source-as="KpuRl_DatRp"/><field name="Код вида оплаты" as="sKpuRlVoCd" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="false" source-as="sKpuRlVoCd"/><field name="Сумма" as="sKpuRlSm" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="false" source-as="sKpuRlSm"/><field name="Ведомость" as="ved" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="true" scale="1" type="number" prgres="" prgtype="2"><program>select 
+ kpuudr1.kpuudrplc_pvgr  
+from kpuudr1 
+where kpuc1.kpu_rcd = kpuudr1.kpu_rcd
+  and kpuudr1.kpuudr_Cd = kpurlo1.kpurl_cdvo 
+  and kpuudr_Rcd = kpurllnk_ls </program></field><field name="Дата початку" as="dtn" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="true" scale="0" type="date" prgres="" prgtype="2"><program>select 
+  kpuudr1.kpuudr_datn  
+from kpuudr1 
+where kpuc1.kpu_rcd = kpuudr1.kpu_rcd
+  and kpuudr1.kpuudr_Cd = kpurlo1.kpurl_cdvo 
+  and kpuudr_Rcd = kpurllnk_ls </program></field><field name="Дата закінчення" as="dtk" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="true" scale="0" type="date" prgres="" prgtype="2"><program>select 
+  kpuudr1.kpuudr_datk  
+from kpuudr1 
+where kpuc1.kpu_rcd = kpuudr1.kpu_rcd
+  and kpuudr1.kpuudr_Cd = kpurlo1.kpurl_cdvo 
+  and kpuudr_Rcd = kpurllnk_ls </program></field><field name="Отримувач" as="fio" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="true" scale="100" type="string" prgres="" prgtype="2"><program>select 
+  kpuudr1.kpuudrplc_fio  
+from kpuudr1 
+where kpuc1.kpu_rcd = kpuudr1.kpu_rcd
+  and kpuudr1.kpuudr_Cd = kpurlo1.kpurl_cdvo 
+  and kpuudr_Rcd = kpurllnk_ls </program></field><field name="ІНП" as="inp" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="true" scale="50" type="string" prgres="" prgtype="2"><program>select 
+  kpuudr1.KpuUdrPlc_INN  
+from kpuudr1 
+where kpuc1.kpu_rcd = kpuudr1.kpu_rcd
+  and kpuudr1.kpuudr_Cd = kpurlo1.kpurl_cdvo 
+  and kpuudr_Rcd = kpurllnk_ls </program></field><field name="Індекс" as="indx" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="true" scale="20" type="string" prgres="" prgtype="2"><program>select 
+  kpuudr1.KpuUdr_Ind  
+from kpuudr1 
+where kpuc1.kpu_rcd = kpuudr1.kpu_rcd
+  and kpuudr1.kpuudr_Cd = kpurlo1.kpurl_cdvo 
+  and kpuudr_Rcd = kpurllnk_ls </program></field><field name="Адреса" as="adress" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="true" scale="100" type="string" prgres="" prgtype="2"><program>select 
+  kpuudr1.KpuUdr_Adr 
+from kpuudr1 
+where kpuc1.kpu_rcd = kpuudr1.kpu_rcd
+  and kpuudr1.kpuudr_Cd = kpurlo1.kpurl_cdvo 
+  and kpuudr_Rcd = kpurllnk_ls </program></field><field name="Контрагент" as="ktrg" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="true" scale="100" type="string" prgres="" prgtype="2"><program>select 
+  ptnrk.ptn_nm  
+from kpuudr1 
+left join ptnrk on kpuudr1.kpuudr_cdplc = ptnrk.ptn_rcd
+where kpuc1.kpu_rcd = kpuudr1.kpu_rcd
+  and kpuudr1.kpuudr_Cd = kpurlo1.kpurl_cdvo 
+  and kpuudr_Rcd = kpurllnk_ls </program></field><field name="Розрахунковий рахунок" as="RS" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="true" scale="100" type="string" prgres="" prgtype="2"><program>select 
+  kpuudr1.KpuUdr_RS 
+from kpuudr1 
+where kpuc1.kpu_rcd = kpuudr1.kpu_rcd
+  and kpuudr1.kpuudr_Cd = kpurlo1.kpurl_cdvo 
+  and kpuudr_Rcd = kpurllnk_ls </program></field><field name="Особовий рахунок" as="OS" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="true" scale="100" type="string" prgres="" prgtype="2"><program>select 
+  kpuudr1.KpuUdr_LS 
+from kpuudr1 
+where kpuc1.kpu_rcd = kpuudr1.kpu_rcd
+  and kpuudr1.kpuudr_Cd = kpurlo1.kpurl_cdvo 
+  and kpuudr_Rcd = kpurllnk_ls </program></field><field name="Назва виконавчого документу" as="nazva" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="true" scale="100" type="string" prgres="" prgtype="2"><program>select 
+  kpuudr1.KpuUdr_ExecDoc  
+from kpuudr1 
+where kpuc1.kpu_rcd = kpuudr1.kpu_rcd
+  and kpuudr1.kpuudr_Cd = kpurlo1.kpurl_cdvo 
+  and kpuudr_Rcd = kpurllnk_ls </program></field></result-fields><or-filters><filters><filter source-as="sKpuRlVoCd" no_sql="false" or-and="false" type="simple" ask-user="true" spr_cd="0" spr_sys="0" spr_type="0" view-filter="0"/><filter source-as="KpuRl_DatUp" no_sql="false" or-and="false" type="simple" ask-user="true" spr_cd="0" spr_sys="0" spr_type="0" view-filter="0"/></filters></or-filters><aggregations/><olap/><export-common type="ask"/><export-file><item exp-name="c:\isproexport.dbf" exp-type="dbf" exp-code="OEM" exp-dateformat="ddmmyyyy" auto_start="AUTO0" exp-delim=";" exp_title=""/></export-file><user-params/></query>

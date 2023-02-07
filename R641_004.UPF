@@ -1,0 +1,13 @@
+REPORT NAME="FR ЮГОК Тех. отчет по датам сдачи с расшифровкой 12.2022" PAGESIZE=58
+*GROUP
+*HEAD
+FR ЮГОК Тех. отчет по датам сдачи с расшифровкой 12.2022
+*END
+AVTOR=╩╬┬└╦┼═╩╬ ╬╦┼═└ ▀╩▓┬═└
+DATA=02/12/22
+TYPE=TABLE641
+LANGUAGE=1
+FR=1
+[RESOURCES]
+7
+[END OF RESOURCES]
