@@ -1,0 +1,15 @@
+REPORT NAME="FR ЮГОК Табель  учёта рабочего времени A4 (06/2013)" PAGESIZE=58
+*GROUP
+*HEAD
+FR ЮГОК Табель  учёта рабочего времени A4 (06/2013)
+*END
+AVTOR=╤ртшЎър  ╚Ёшэр ┬рфшьютэр
+DATA=12/06/13
+TYPE=TABLE253
+LANGUAGE=1
+FR=1
+[RESOURCES]
+0
+2
+20
+[END OF RESOURCES]

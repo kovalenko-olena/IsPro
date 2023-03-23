@@ -1,0 +1,12 @@
+REPORT NAME="FR Импорт данных Ядро Категория" PAGESIZE=58
+*GROUP
+*HEAD
+FR Импорт данных Ядро Категория
+*END
+AVTOR=╩╬┬└╦┼═╩╬ ╬╦┼═└ ▀╩▓┬═└
+DATA=17/03/23
+TYPE=TABLE140
+LANGUAGE=1
+FR=1
+[RESOURCES]
+[END OF RESOURCES]

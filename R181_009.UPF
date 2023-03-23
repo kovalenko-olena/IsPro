@@ -1,0 +1,15 @@
+REPORT NAME="FR ЮГОК Расчетная ведомость по видам оплат 03/2023" PAGESIZE=58
+*GROUP
+*HEAD
+FR ЮГОК Расчетная ведомость по видам оплат 03/2023
+*END
+AVTOR=╩ютрыхэъю ┼ыхэр ▀ъютыхтэр
+DATA=30/01/12
+TYPE=TABLE181
+LANGUAGE=1
+FR=1
+[RESOURCES]
+0
+2
+11
+[END OF RESOURCES]

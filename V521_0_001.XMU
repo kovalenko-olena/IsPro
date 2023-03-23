@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+<query name="ЮГОК Калібр, Функціонал" use-aggregation="true" fixed-cols="0" read_nolock="0" isfonbird="0" fonbird="0"><include file="V521_0_001.XML"/><result-fields><field name="Табельный №" as="Kpu_Tn" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="false" source-as="Kpu_Tn"/><field name="№ карточки" as="Kpu_Nmr" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="false" source-as="Kpu_Nmr"/><field name="Фамилия Имя Отчество" as="Kpu_Fio" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="false" source-as="Kpu_Fio"/><field name="Подразделение" as="sPayLsOs_Pd" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="false" source-as="sPayLsOs_Pd"/><field name="Должность" as="sPayLsOs_Dol" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="false" source-as="sPayLsOs_Dol"/><field name="Дата поступления" as="Kpu_DtPst" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="false" source-as="Kpu_DtPst"/><field name="Дата увольнения" as="Kpu_DtUvl" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="false" source-as="Kpu_DtUvl"/><field name="Калібр код" as="kalibr_kod" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="true" scale="0" type="int" prgres="" prgtype="2"><program>select top 1
+UF_RkValN
+from UFPRV
+left join UFSPR on UFS_Rcd=25 and UFS_CdN=UF_RkValN
+where UF_TblRcd = (select top 1 KdrSREd_SPRcd
+                   from kdrsred 
+                   where KdrSREd_CtRcd = 
+				       (select max(KdrSREd_CtRcd) 
+					    from kdrsred)
+                	and KdrSREd_KpuRcd = KPUX.KPU_RCD
+                    and KdrSREd_DatK&gt;getdate()
+                    order by KdrSREd_DatK asc)
+and UF_TblId = 2043
+and UF_RkRcd = 111</program></field><field name="Калібр найменування" as="kalibr_str" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="true" scale="25" type="string" prgres="" prgtype="2"><program>select top 1
+UFS_Nm
+from UFPRV
+left join UFSPR on UFS_Rcd=25 and UFS_CdN=UF_RkValN
+where UF_TblRcd = (select top 1 KdrSREd_SPRcd
+                   from kdrsred 
+                   where KdrSREd_CtRcd = 
+				       (select max(KdrSREd_CtRcd) 
+					    from kdrsred)
+                	and KdrSREd_KpuRcd = KPUX.KPU_RCD
+                    and KdrSREd_DatK&gt;getdate()
+                    order by KdrSREd_DatK asc)
+and UF_TblId = 2043
+and UF_RkRcd = 111</program></field><field name="Функціонал код" as="funct_kod" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="true" scale="0" type="int" prgres="" prgtype="2"><program>select top 1
+UF_RkValN
+from UFPRV
+left join UFSPR on UFS_Rcd=26 and UFS_CdN=UF_RkValN
+where UF_TblRcd = (select top 1 KdrSREd_SPRcd
+                   from kdrsred 
+                   where KdrSREd_CtRcd = 
+				       (select max(KdrSREd_CtRcd) 
+					    from kdrsred)
+        	    and KdrSREd_KpuRcd = KPUX.KPU_RCD
+                    and KdrSREd_DatK&gt;getdate()
+                    order by KdrSREd_DatK asc)
+and UF_TblId = 2043
+and UF_RkRcd = 112</program></field><field name="Функціонал найменування" as="funct_str" olap="" progressbar="" progressbarright="" progressbarcolor="" olapicon="" calculated="true" scale="25" type="string" prgres="" prgtype="2"><program>select top 1
+UFS_Nm
+from UFPRV
+left join UFSPR on UFS_Rcd=26 and UFS_CdN=UF_RkValN
+where UF_TblRcd = (select top 1 KdrSREd_SPRcd
+                   from kdrsred 
+                   where KdrSREd_CtRcd = 
+				       (select max(KdrSREd_CtRcd) 
+					    from kdrsred)
+                	and KdrSREd_KpuRcd = KPUX.KPU_RCD
+                    and KdrSREd_DatK&gt;getdate()
+                    order by KdrSREd_DatK asc)
+and UF_TblId = 2043
+and UF_RkRcd = 112</program></field></result-fields><or-filters/><aggregations/><olap/><export-common type="ask"/><export-file><item exp-name="c:\isproexport.dbf" exp-type="dbf" exp-code="OEM" exp-dateformat="ddmmyyyy" auto_start="AUTO0" exp-delim=";" exp_title=""/></export-file><user-params/></query>

@@ -1,0 +1,15 @@
+REPORT NAME="FR ЮГОК Табель за первую половину месяца" PAGESIZE=58
+*GROUP
+*HEAD
+FR ЮГОК Табель за первую половину месяца
+*END
+AVTOR=╠юёърыхтр ╥рЄ№ эр ├ЁшуюЁ№хтэр
+DATA=22/02/11
+TYPE=TABLE253
+LANGUAGE=1
+FR=1
+[RESOURCES]
+0
+2
+20
+[END OF RESOURCES]
