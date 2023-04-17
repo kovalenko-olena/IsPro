@@ -1,0 +1,16 @@
+REPORT NAME="FR 2023/04/14 Выборка из KPURLO1 средний для отпуска, маска дней" PAGESIZE=58
+*GROUP
+*HEAD
+FR 2023/04/14 Выборка из KPURLO1 средний для отпуска, маска дней
+*END
+AVTOR=╤└┬╚╓▄╩└ ▓╨╚═└ ┬└─╚╠▓┬═└
+DATA=17/11/16
+TYPE=TABLE1858
+LANGUAGE=1
+FR=1
+[RESOURCES]
+0
+2
+11
+20
+[END OF RESOURCES]

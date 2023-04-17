@@ -1,0 +1,14 @@
+REPORT NAME="FR ЮГОК Повiдомлення про змiну облiкових даних" PAGESIZE=58
+*GROUP
+*HEAD
+FR ЮГОК Повiдомлення про змiну облiкових даних
+*END
+AVTOR=╩╬┬└╦┼═╩╬ ╬╦┼═└ ▀╩▓┬═└
+DATA=10/04/23
+TYPE=TABLE1817
+LANGUAGE=2
+LAW=1
+FR=1
+[RESOURCES]
+0
+[END OF RESOURCES]

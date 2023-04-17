@@ -1,0 +1,13 @@
+REPORT NAME="FR ЮГОК Резерв вiдпусток" PAGESIZE=58
+*GROUP
+*HEAD
+FR ЮГОК Резерв вiдпусток
+*END
+AVTOR=╩╬┬└╦┼═╩╬ ╬╦┼═└ ▀╩▓┬═└
+DATA=01/04/23
+TYPE=TABLE917
+LANGUAGE=2
+LAW=1
+FR=1
+[RESOURCES]
+[END OF RESOURCES]
