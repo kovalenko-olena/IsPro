@@ -1,0 +1,16 @@
+REPORT NAME="FR ЮГОК Список користувачiв" PAGESIZE=58
+*GROUP
+*HEAD
+FR ЮГОК Список користувачiв
+*END
+AVTOR=╤└┬╚╓▄╩└ ▓╨╚═└ ┬└─╚╠▓┬═└
+DATA=31/12/14
+TYPE=TABLE208
+LANGUAGE=1
+FR=1
+[RESOURCES]
+0
+2
+11
+20
+[END OF RESOURCES]
